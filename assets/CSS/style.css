@@ -1,0 +1,489 @@
+:root {
+    --background-color: #edeef6;
+    --color: #445776;
+}
+
+
+/* font size set. this enables easier editing */
+html {
+    font-size: 62.5%;
+  }
+  
+
+  /* font family set  */
+  /* line height set  */
+  /* main background color set  */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--color);
+    background-color: var(--background-color);
+  }
+
+  /* reduces width and centers content  */
+header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #32343D;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+header h1 {
+    text-align: right;
+    margin: 0.5rem 0rem 1.5rem 0;
+    padding: 10px;
+    background-color: #92cacd;
+    width: 300px;
+    color:#32343D;
+    
+}
+
+/* Width of nav links  */
+.link {
+    width: 440px;
+}
+
+
+/* Displayed as a row and takes away bullet point */
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+/* formating for nav links */
+.nav-a {
+    color: #92cacd;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0.65rem;
+    padding: 0.2rem;
+    border-bottom: 2.5px solid #92cacd;
+}
+
+/* hover formatting for nav links  */
+a:hover {
+    background-color: #772014;
+    color: #fff;
+  }
+
+
+/* main background img formatting  */
+.background {
+    width: 96%;
+    margin: 0 auto;
+}
+
+/* main background img formatting  */
+/* link added  */
+.background-image {
+    height: 270px;
+    width: 96%;
+    margin-bottom: 0;
+    background-image: url("../images/background.JPG") /*background image */;
+    background-size: cover;
+    align-items:center;
+}
+
+/* background img and text box added as a flex box  */
+.container {
+    display: flex;
+    flex-direction: row; 
+}
+
+/* formatting to make the flex box the full width of the body  */
+/* justify-content and align-items to place box in bottom corner.  */
+.flex-box {
+    display: flex;
+    width:100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* .container div {
+    padding: 45px;
+    margin: 0.5rem 0.5rem 3.5rem 0.5rem;
+} */
+
+/* formatting for textbox. including realtive position and font size  */
+.background-header {
+    /* display: flex;
+    flex-wrap: wrap;  */
+    background-color:  #92cacd;
+    /* padding: 5px; */
+    margin: 0.5rem;
+    padding: 0 1rem 0 1rem;
+    font-size: 2.75rem;
+    color: #32343D;
+    position: relative;
+    top: -25px;
+    right: 15px;
+}
+
+/* reduces width of body to fit with header  */
+/* content centered   */
+main {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ##### can't find where this selector is linked, but it affects the formatting  */
+.row-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    
+    /* justify-content: space-between; */
+}
+
+/* padding added to About me section  */
+.section-main {
+    padding: 25px 0 0 0;
+}
+ 
+.about-me-flex {
+    /* display: flex;
+    flex-wrap: wrap; */
+    font-size: 3rem;
+    width: 25%;
+    height: 100%;
+    text-align: end;
+    padding: 0px 10px 0 0;
+    margin: 0;
+    /* border-right: 2.5px solid #92cacd; */
+}
+
+/* About me header and paragraph made into flex box  */
+.flex-box-main {
+    display: flex;
+    flex-direction: row;
+    /* width:100%;
+    height: 100%; */
+    /* justify-content: flex-end; */
+    /* align-items: start; */
+    
+}
+
+/* paragraph formatted to a column so the paragrpahs aren't side-by-side  */
+.align-center {
+    display: flex;
+    align-items: start;
+    flex: 1 0 66%;
+    flex-direction: column;
+}
+
+/* boarder and padding added for formattting  */
+.content-border {
+    border-left: 2.5px solid #92cacd;
+    padding: 0 50px 0 25px;
+}
+    /* display: flex;
+    align-items: center;
+    /* flex-direction: column;
+    font-size: 1.25rem;  */
+
+    /* bottom margin added to paragraph  */
+p {
+    margin: 0 0 25px 0;
+}
+
+
+/* formatting for work header  */
+.work-flex {
+    /* display: flex;
+    flex-wrap: wrap; */
+    font-size: 3rem;
+    width: 25%;
+    height: 100%;
+    text-align: end;
+    padding: 0px 10px 0 0;
+    margin: 0;
+    /* border-right: 2.5px solid #92cacd; */
+    }
+
+
+/* turn figure into another flex box inside another  */
+.flex-box-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+    
+/* flex box for background images in work section. 98% size height 33%. padding nd boarder added */
+.card-column-work {
+    flex: 1 0 98%;
+    height: 33%;
+    padding: 3px;
+    border: 1px;
+}
+
+/* background img for Surf Report  */
+.background-image-surf {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url("../images/surf.JPG") /*background image */;
+    background-size:cover;
+    border-top: 2px solid #92cacd;
+    border-bottom: 2px solid #92cacd;
+    border-left: 2px solid #92cacd;
+    border-right: 2px solid #92cacd;
+}
+
+/* Hover formatting for surf img  */
+.background-image-surf:hover {
+    opacity: 0.5;
+  }
+
+
+/* .h1-display {
+    width: 386px;
+} */
+
+/* figure {
+    width: 1000px;
+} */
+
+/* siz of bacground images inside flex box to fit space  */
+.content-img {
+    width:66%;
+    height:700px;
+}
+
+/* background img for LED  */
+.background-image-led {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url("../images/neon.jpg") /*background image */;
+    background-size:auto;
+    align-items:center;
+    border-top: 2px solid #92cacd;
+    border-bottom: 2px solid #92cacd;
+    border-left: 2px solid #92cacd;
+    border-right: 2px solid #92cacd;
+    
+}
+/* LED img formattign  */
+.background-image-led:hover {
+    opacity: 0.5;
+  }
+
+  /* formatting for smaller background images  */
+.small-img {
+    flex: 2 0 33%;
+    height: 33%;
+    align
+    /* height: 200%; */
+}
+
+/* background img for Calculator  */
+.background-image-calc {
+    height: 231px;
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url("../images/calculator.jpg") /*background image */;
+    background-size:auto;
+    align-items:center;
+    border-top: 2px solid #92cacd;
+    border-bottom: 2px solid #92cacd;
+    border-left: 2px solid #92cacd;
+    border-right: 2px solid #92cacd;
+}
+
+/* formatting hover for calculator img  */
+.background-image-calc:hover {
+    opacity: 0.5;
+  }
+
+/* background img for pastel  */
+.background-image-pastel {
+    height: 231px;
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url("../images/pastel.jpg") /*background image */;
+    background-size:auto;
+    align-items:center;
+    border-top: 2px solid #92cacd;
+    border-bottom: 2px solid #92cacd;
+    border-left: 2px solid #92cacd;
+    border-right: 2px solid #92cacd;
+}
+
+/* formatting hover for pastel img  */
+.background-image-pastel:hover {
+    opacity: 0.5;
+  }
+
+/* background img for Run Buddy  */
+.background-image-run {
+    height: 231px;
+    width: 100%;
+    margin-bottom: 0;
+    background-image: url("../images/run-buddy.JPG") /*background image */;
+    background-size:auto;
+    align-items:center;
+    border-top: 2px solid #92cacd;
+    border-bottom: 2px solid #92cacd;
+    border-left: 2px solid #92cacd;
+    border-right: 2px solid #92cacd;
+}
+
+/* formatting for Run buddy image  */
+.background-image-run:hover {
+    opacity: 0.5;
+  }
+
+
+/* padding for smaller images  */
+.img-padding {
+    padding: 3px ;
+}
+
+/* formatting for h3 header in Work section  */
+.h3-main {
+    margin: 0;
+}
+
+/* Formatting for text box inside background img. Places box slightly offset of left bottom corner  */
+.info-main {
+    background-color:  #92cacd;
+    color: #32343D;
+    display: inline-block;
+    position: relative;
+    bottom: -130px;
+    padding: 10px;
+}
+
+/* formatting for h4  */
+h4 {
+    font-size: 50%;
+}
+
+/* .p-border {
+    border-left: 2.5px solid #92cacd;
+    padding: 0 50px 0 25px;
+} */
+
+/* margin for section with background images. this formats to line up with the other sections */
+.main-margin {
+    margin: 0;
+}
+
+/* top padding for Work Section  */
+.main-section-padding {
+    padding: 25px 0 0 0;
+}
+
+
+/* Footer  */
+
+/* Top and bottom padding  */
+.footer-bottom-padding {
+    padding: 50px 0 50px 0;
+}
+
+/* H1 formatting. Required to line up with other sections. */
+.contact-me-footer {
+    /* display: flex;
+    flex-wrap: wrap; */
+    font-size: 3rem;
+    width: 26%;
+    height: 100%;
+    text-align: end;
+    padding: 0px 10px 0 0;
+    margin: 0;
+    /* border-right: 2.5px solid #92cacd; */
+}
+
+/* Creates flex box  */
+/* places content next to each other  */
+.footer-flex {
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    width: 66%;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* formatting for contact links  */
+/* color, padding, bottom border added */
+.footer-ul {
+    color: #32343D;
+    padding: 15px;
+    margin: 5px;
+    border-bottom: 2px solid  #32343D;
+    line-height: 4rem;
+}
+
+/* removes bullte points 
+.footer-ul-style {
+    list-style-type: none;
+}
+ */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 822px) {
+    body  {
+      width: 96%;
+      margin: 0;
+      justify-content: center;
+      align-items: ;
+      /* font-size: 90%; */
+    }
+
+    .link {
+        width:300px;
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    .about-me-flex1 {
+        font-size: 3rem;
+        width: 30%;
+        height: 100%;
+        text-align: end;
+        padding: 0px 10px 0 0;
+        margin: 0;
+    }
+
+    .section-main {
+        height:200%;
+    }
+
+  
+
+    .footer-flex a{
+        
+        flex-direction: column;
+    }
+  }
+  

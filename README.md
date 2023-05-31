@@ -59,10 +59,13 @@ correct semantic flow has been followed for accessibility
 
 
 ### Header with Nav bar
-[Screenshot](../images/Header.png)
+<img width="1623" alt="Header" src="https://github.com/jarrodbb/Professional-Portfolio-Jarrod-Blanning/assets/132813348/1cf1b8e1-6064-4d72-8a0a-bc39a41d8eab">
+
 ### Body with content inside sections  
+<img width="1631" alt="Body" src="https://github.com/jarrodbb/Professional-Portfolio-Jarrod-Blanning/assets/132813348/42f7cca0-2e4b-4d13-8402-458a5aea81ec">
 
 ### Footer with contact information
+<img width="1487" alt="Footer" src="https://github.com/jarrodbb/Professional-Portfolio-Jarrod-Blanning/assets/132813348/3690a4a6-7bb3-475c-b4ed-a071f806f512">
 
 ## Credits
 

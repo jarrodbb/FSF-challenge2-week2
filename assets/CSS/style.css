@@ -1,6 +1,13 @@
+
+/* add more vars  */
 :root {
     --background-color: #edeef6;
     --color: #445776;
+    --darker-color: #32343D; 
+    --light-color: #92cacd;
+    --border-color: #92cacd;
+    --hover-font: #fff; 
+    --hover-color: pink;
 }
 
 
@@ -13,7 +20,6 @@ html {
   /* font family set  */
   /* line height set  */
   /* main background color set  */
-
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
       Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -28,9 +34,10 @@ header {
     width: 96%;
     margin: 0 auto;
     padding: 0;
-    background-color: #32343D;
+    background-color: var(--darker-color);
   }
 
+  /* creater a flex box to wrap the content of the header  */
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -39,13 +46,14 @@ header {
     align-items: center;
   }
 
+  /* h1 formatting for the header  */
 header h1 {
     text-align: right;
     margin: 0.5rem 0rem 1.5rem 0;
     padding: 10px;
-    background-color: #92cacd;
+    background-color: var(--light-color);
     width: 300px;
-    color:#32343D;
+    color: var(--darker-color);
     
 }
 
@@ -64,19 +72,19 @@ ul {
 
 /* formating for nav links */
 .nav-a {
-    color: #92cacd;
+    color: var(--light-color);
     text-decoration: none;
     font-size: 2rem;
     font-weight: 500;
     margin: 0.65rem;
     padding: 0.2rem;
-    border-bottom: 2.5px solid #92cacd;
+    border-bottom: 2.5px solid var(--border-color);
 }
 
 /* hover formatting for nav links  */
 a:hover {
-    background-color: #772014;
-    color: #fff;
+    background-color: var(--hover-color);
+    color: var(--hover-font);
   }
 
 
@@ -113,21 +121,14 @@ a:hover {
     align-items: flex-end;
 }
 
-/* .container div {
-    padding: 45px;
-    margin: 0.5rem 0.5rem 3.5rem 0.5rem;
-} */
 
 /* formatting for textbox. including realtive position and font size  */
 .background-header {
-    /* display: flex;
-    flex-wrap: wrap;  */
-    background-color:  #92cacd;
-    /* padding: 5px; */
+    background-color: var(--light-color);
     margin: 0.5rem;
     padding: 0 1rem 0 1rem;
     font-size: 2.75rem;
-    color: #32343D;
+    color: var(--darker-color);
     position: relative;
     top: -25px;
     right: 15px;
@@ -141,42 +142,31 @@ main {
     padding: 0;
 }
 
-/* ##### can't find where this selector is linked, but it affects the formatting  */
-.row-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-grow: 1;
-    
-    /* justify-content: space-between; */
-}
-
 /* padding added to About me section  */
 .section-main {
     padding: 25px 0 0 0;
 }
  
+/* formatting  */
 .about-me-flex {
-    /* display: flex;
-    flex-wrap: wrap; */
     font-size: 3rem;
     width: 25%;
     height: 100%;
     text-align: end;
     padding: 0px 10px 0 0;
     margin: 0;
-    /* border-right: 2.5px solid #92cacd; */
 }
 
 /* About me header and paragraph made into flex box  */
 .flex-box-main {
     display: flex;
     flex-direction: row;
-    /* width:100%;
-    height: 100%; */
-    /* justify-content: flex-end; */
-    /* align-items: start; */
-    
+}
+
+/* flex box for main section  */
+.flex-box-main-work {
+    display: flex;
+    flex-direction: row;
 }
 
 /* paragraph formatted to a column so the paragrpahs aren't side-by-side  */
@@ -189,13 +179,9 @@ main {
 
 /* boarder and padding added for formattting  */
 .content-border {
-    border-left: 2.5px solid #92cacd;
+    border-left: 2.5px solid var(--border-color);
     padding: 0 50px 0 25px;
 }
-    /* display: flex;
-    align-items: center;
-    /* flex-direction: column;
-    font-size: 1.25rem;  */
 
     /* bottom margin added to paragraph  */
 p {
@@ -205,15 +191,12 @@ p {
 
 /* formatting for work header  */
 .work-flex {
-    /* display: flex;
-    flex-wrap: wrap; */
     font-size: 3rem;
     width: 25%;
     height: 100%;
     text-align: end;
     padding: 0px 10px 0 0;
     margin: 0;
-    /* border-right: 2.5px solid #92cacd; */
     }
 
 
@@ -241,25 +224,16 @@ p {
     margin-bottom: 0;
     background-image: url("../images/surf.JPG") /*background image */;
     background-size:cover;
-    border-top: 2px solid #92cacd;
-    border-bottom: 2px solid #92cacd;
-    border-left: 2px solid #92cacd;
-    border-right: 2px solid #92cacd;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
 }
 
 /* Hover formatting for surf img  */
 .background-image-surf:hover {
     opacity: 0.5;
   }
-
-
-/* .h1-display {
-    width: 386px;
-} */
-
-/* figure {
-    width: 1000px;
-} */
 
 /* siz of bacground images inside flex box to fit space  */
 .content-img {
@@ -275,10 +249,10 @@ p {
     background-image: url("../images/neon.jpg") /*background image */;
     background-size:auto;
     align-items:center;
-    border-top: 2px solid #92cacd;
-    border-bottom: 2px solid #92cacd;
-    border-left: 2px solid #92cacd;
-    border-right: 2px solid #92cacd;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
     
 }
 /* LED img formattign  */
@@ -290,8 +264,6 @@ p {
 .small-img {
     flex: 2 0 33%;
     height: 33%;
-    align
-    /* height: 200%; */
 }
 
 /* background img for Calculator  */
@@ -302,10 +274,10 @@ p {
     background-image: url("../images/calculator.jpg") /*background image */;
     background-size:auto;
     align-items:center;
-    border-top: 2px solid #92cacd;
-    border-bottom: 2px solid #92cacd;
-    border-left: 2px solid #92cacd;
-    border-right: 2px solid #92cacd;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
 }
 
 /* formatting hover for calculator img  */
@@ -321,10 +293,10 @@ p {
     background-image: url("../images/pastel.jpg") /*background image */;
     background-size:auto;
     align-items:center;
-    border-top: 2px solid #92cacd;
-    border-bottom: 2px solid #92cacd;
-    border-left: 2px solid #92cacd;
-    border-right: 2px solid #92cacd;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
 }
 
 /* formatting hover for pastel img  */
@@ -340,10 +312,10 @@ p {
     background-image: url("../images/run-buddy.JPG") /*background image */;
     background-size:auto;
     align-items:center;
-    border-top: 2px solid #92cacd;
-    border-bottom: 2px solid #92cacd;
-    border-left: 2px solid #92cacd;
-    border-right: 2px solid #92cacd;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
 }
 
 /* formatting for Run buddy image  */
@@ -364,8 +336,8 @@ p {
 
 /* Formatting for text box inside background img. Places box slightly offset of left bottom corner  */
 .info-main {
-    background-color:  #92cacd;
-    color: #32343D;
+    background-color: var(--light-color);
+    color: var(--darker-color);
     display: inline-block;
     position: relative;
     bottom: -130px;
@@ -376,11 +348,6 @@ p {
 h4 {
     font-size: 50%;
 }
-
-/* .p-border {
-    border-left: 2.5px solid #92cacd;
-    padding: 0 50px 0 25px;
-} */
 
 /* margin for section with background images. this formats to line up with the other sections */
 .main-margin {
@@ -402,23 +369,19 @@ h4 {
 
 /* H1 formatting. Required to line up with other sections. */
 .contact-me-footer {
-    /* display: flex;
-    flex-wrap: wrap; */
     font-size: 3rem;
     width: 26%;
     height: 100%;
     text-align: end;
     padding: 0px 10px 0 0;
     margin: 0;
-    /* border-right: 2.5px solid #92cacd; */
+    
 }
 
 /* Creates flex box  */
 /* places content next to each other  */
 .footer-flex {
     display: flex;
-    /* flex-wrap: wrap;
-    flex-direction: row; */
     width: 66%;
     height: 250px;
     align-items: center;
@@ -428,62 +391,320 @@ h4 {
 /* formatting for contact links  */
 /* color, padding, bottom border added */
 .footer-ul {
-    color: #32343D;
+    color: var(--darker-color);
     padding: 15px;
     margin: 5px;
-    border-bottom: 2px solid  #32343D;
+    border-bottom: 2px solid  var(--darker-color);
     line-height: 4rem;
+    text-decoration:none ;
 }
 
-/* removes bullte points 
-.footer-ul-style {
-    list-style-type: none;
-}
- */
+
+/* Media screen for different sized screen displays  */
 
 
-
-
-
-
-
-
-
-@media screen and (max-width: 822px) {
-    body  {
-      width: 96%;
-      margin: 0;
-      justify-content: center;
-      align-items: ;
-      /* font-size: 90%; */
+/* for screens width max size 1050px */
+  @media screen and (max-width: 1050px) {
+    .footer-flex ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
-    .link {
-        width:300px;
-    }
-
-    a {
+    
+    .footer-ul {
+        padding: 10px;
+        margin: 2px;
         font-size: 1rem;
     }
+}
 
-    .about-me-flex1 {
-        font-size: 3rem;
-        width: 30%;
-        height: 100%;
-        text-align: end;
-        padding: 0px 10px 0 0;
-        margin: 0;
+/* for screens width max size 1000px */
+/* ensures images maintain the correct width  */
+@media screen and (max-width: 1000px) {
+    .content-img {
+      width: auto;
+    }
     }
 
-    .section-main {
-        height:200%;
+/* for screens width max size 888px  */
+/* enusres boarders line up  */
+@media screen and (max-width: 888px){
+    .work-flex {
+        width: 27%;
+        padding: 0px 8px 0 0;
+    }
     }
 
-  
+/* for screens width max size 822px  */
+@media screen and (max-width: 822px) {
+    body  {
+      margin: 0;
+      justify-content: center;
+    }
 
-    .footer-flex a{
-        
-        flex-direction: column;
+/* header adjusted  */
+    .row {
+        justify-content: normal;
+
+    }
+
+/* width of nav adjusted  */
+    .link {
+        width:350px;
+    }
+
+/* font size in anchor tag in nav is adjusted */
+    .nav-a {
+        font-size: 12px;
     }
   }
   
+/* for screens width max size 788px  */  
+/* enusres boarders line up  */
+@media screen and (max-width: 788px){
+    .work-flex {
+          width: 28%;
+    }
+  }
+
+/* for screens width max size 730px  */
+/* enusres boarders line up  */
+  @media screen and (max-width: 730px){
+    .work-flex {
+          width: 30%;
+    }
+  }
+
+/* for screens width max size 630px  */ 
+/* enusres boarders line up  */
+  @media screen and (max-width: 630px){
+    .work-flex {
+          width: 31%;
+    }
+  }
+
+/* for screens width max size 510px  */
+/* enusres boarders line up  */
+/* font size reduced to fit  */
+  @media screen and (max-width: 510px){
+    .work-flex {
+          width: 34%;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+  }
+
+
+/* for screens width max size 490px  */
+/* enusres boarders line up  */
+  @media screen and (max-width: 490px){
+    .work-flex {
+          width: 38%;
+    }
+  }
+
+/* for screens width max size 440px  */
+/* enusres boarders line up  */
+  @media screen and (max-width: 440px){
+    .work-flex {
+          width: 52%;
+    }
+
+    h3 {
+        font-size: 8px;
+    }
+  }
+
+/* for screens width max size 414px  */
+/* enusres boarders line up  */
+  @media screen and (max-width: 414px){
+    .work-flex {
+          width: 35%;
+    }
+}
+
+/* for screens width max size 414px  */
+/* enusres boarders line up  */
+    @media screen and (max-width: 414px){
+        .work-flex {
+              width: 42%;
+        }
+}
+
+/* for screens width max size 375px  */
+/* enusres boarders line up  */
+/* font sized reduced */
+@media screen and (max-width: 375px){
+    .work-flex {
+          width: 25%;
+          font-size: 1.5rem;
+    }
+
+    .contact-me-footer {
+        width: 17%;
+        font-size: 1.5rem;
+  }
+
+}
+
+
+/* media screen footer alignment */
+/* enusres boarders line up  */
+@media screen and (max-width: 950px){
+    .contact-me-footer {
+          width: 25%;
+    }
+}
+
+/* enusres boarders line up  */
+@media screen and (max-width: 840px){
+    .contact-me-footer {
+          width: 24%;
+    }
+}
+
+/* enusres boarders line up  */
+@media screen and (max-width: 693px){
+    .contact-me-footer {
+          width: 18%;
+          font-size: 2rem;
+    }
+}
+
+/* enusres boarders line up  */
+@media screen and (max-width: 551px){
+    .contact-me-footer {
+          width: 21%;
+    }
+}
+
+/* enusres boarders line up  */
+/* h3 and h4 reduced to fit  */
+@media screen and (max-width: 470px){
+    .contact-me-footer {
+          width: 22%;
+    }
+
+    h3 {
+        font-size: 6px;
+    }
+
+    h4 {
+        font-size: 25%;
+    }
+}
+
+/* enusres boarders line up  */
+@media screen and (max-width: 438px){
+    .contact-me-footer {
+          width: 30%;
+    }
+
+}
+
+/* enusres boarders line up  */
+@media screen and (max-width: 375px){
+    body {
+        font-size: 1rem;
+    }
+    
+    .about-me-flex {
+        font-size: 2rem;
+    }
+    
+    .flex-box-main-work {
+        height: 700px
+    }
+
+    /* img size reduced to fit screen  */
+    .content-img {
+        height:735px;
+    }
+    
+    /* flex box formatted to fit screen  */
+    .card-column-work {
+        flex: 1 0 85%;
+        height: 20%;
+        padding: 0px;
+        border: 0px;
+    }
+
+    /* border reduced to fit sreen size  */
+    .info-main {
+        bottom: -82px;
+    }
+
+/* img reduced to fit  */
+    .background-image-led {
+        height: 106%;
+        width: 101%;
+    }
+  
+/* formatting for images to fit flex box */
+    .small-img {
+        flex: 1 0 70%;
+        height: 122px;
+    }
+
+/* img reduced to fit  */
+    .background-image-calc {
+        height: 132px;
+    }
+
+
+/* img reduced to fit  */
+    .background-image-pastel {
+        height: 132px;
+    }
+
+
+/* img reduced to fit  */
+    .background-image-run {
+        height: 127px;
+    }
+}
+
+/* media screen max width 375px  */
+/* footer adjusted so boarder lines up  */
+@media screen and (max-width: 375px){
+    
+    .contact-me-footer {
+        width: 17%;
+        font-size: 1.5rem;
+  }
+
+}
+
+/* media screen max width 360px  */
+
+@media screen and (max-width: 360px){
+    /* header h1 reduced to fit smaller screen  */
+    .row h1 {
+        width: 200px;
+        padding: 5px;
+    }
+
+    /* header reduced to fit smaller screen  */
+    header {
+        width: 100%;
+    }
+
+    /* background img to fit  */
+    .background-image {
+        width: 100%;
+    }
+
+    /* change direction of flex box to column to fit scrren  */
+    .link ul {
+        flex-direction: column;
+    }
+
+    /* reduce font size to fit  */
+    .about-me-flex {
+        font-size: 2rem;
+    }
+}
+

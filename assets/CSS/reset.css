@@ -1,5 +1,7 @@
 
 
+/* Reset CSS to ensure browser is using the correct CSS formatting  */
+
 html {
     height: 100%;
   }

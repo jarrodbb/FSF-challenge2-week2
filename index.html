@@ -10,12 +10,19 @@
 </head>
 
 <body>
+    <!-- Header includes nav links  -->
+    <!-- flex box created  -->
+    <!-- flex box direction is row to fit  -->
     <header class="row">
         <div>
         <h1>Jarrod Blanning</h1>
         </div>
         <div>
+            <!-- width of nav box specified in .link  -->
         <nav class="link">
+            <!-- href linked to content on page  -->
+            <!-- anchor tags used to enable links  -->
+            <!-- nav-a class enables formatting of <a> tags  -->
             <ul>
                 <li>
                     <a class="nav-a" href="#about-me">About Me</a>
@@ -24,20 +31,25 @@
                     <a class="nav-a" href="#Work">Work</a>
                 </li>
                 <li> 
-                <a class="nav-a" href="#Contact Me">Contact Me</a>
+                <a class="nav-a" href="#ContactMe">Contact Me</a>
                 </li>   
                 <li>
                     <a class="nav-a" href="#resume">Resume</a> 
                 </li>
-                    <!-- add a link to resume  -->
-                    <!-- removing li gives correct formatting  -->
             </ul>
         </nav>
         </div>
     </header>
 
+<!-- background img with text box  -->
+<!-- container class creates a flex box  -->
+<!-- background class formates width of box  -->
+<!-- background-image assigned img  -->
+<!-- section created for semantic flow  -->
     <section class="container background background-image">
+       <!-- flex-box creates another flex box inside class=container. This is to allow formatting  -->
         <div class="flex-box">
+            <!-- background-header assigns formatting  -->
             <h3 class="background-header"> 
                 Checkout My Work
             </h3>
@@ -45,10 +57,17 @@
     </section>
 
     <main>
+        <!-- id links to <a> tag  -->
+            <!-- class= section-main assigns padding  -->
         <section id="about-me" class="section-main">
+           <!-- flex box created with flex-box-main  -->
             <div class="flex-box-main">
+                <!-- formatting for h1 assigned with about-me-flex -->
             <h1 class="about-me-flex">About Me</h1>
+            <!-- another flex box is created with align-center  -->
+            <!-- .content-border assigns a border to the left of the paragraph and adds padding to the right and left  -->
                 <div class="align-center content-border">
+                   <!-- paragraph added  -->
                     <p>
                         I'm local to the Gold Coast in Queensland and currently run a micro brewery called Lost Palms.
 
@@ -66,31 +85,55 @@
             </div>
         </section>
 
-        <section class="main-section-padding">
-            <div class="flex-box-main">
+        <!-- new section added for semantic flow. keeps new content together  -->
+        <!-- id=work added to link with <a> tag  -->
+            <!-- main-section-padding adds padding to section  -->
+        <section id="Work" class="main-section-padding">
+            <!-- flex box created with flex-box-main  -->
+            <div class="flex-box-main-work">
+                <!-- formatting assigned with class=work-flex  -->
                 <h1 class="work-flex">Work </h1>
-                <figure class="content-img flex-box-work content-border main-margin">
+                <!-- figure added for smeantic flow  -->
+                <!-- another flex box is created with flex-box-work  -->
+                <!-- content-img adds formatting width and height to figure section  -->
+                <!-- .content-border assigns a border to the left of the paragraph and adds padding to the right and left  -->
+                <!-- main-margin sets margin to 0 for figure  -->
+            <figure class="content-img flex-box-work content-border main-margin">
+                   <!-- card-column-work assigns flex properties -->
                     <div class="card-column-work">
+                        <!-- background img added  -->
                     <div class="background-image-surf">
+                        <!-- class info-main assigns properties to box container inforamtion -->
                         <div class="info-main">
+                        <!-- h3-main sets margin to 0 for formatting  -->
                         <h3 class="h3-main">Surf Report</h3>
                         <h4 class="h3-main">MERN Stack</h4>
                         </div>
                     </div>
                     </div>
 
+                    <!-- padding added with img-padding -->
+                    <!-- class small-img adds flex properties and height for formatting  -->
                     <div class="img-padding small-img">
+                        <!-- background img added  -->
                     <div class="background-image-led">
+                        <!-- class info-main assigns properties to box container inforamtion -->
                         <div class="info-main">
+                        <!-- h3-main sets margin to 0 for formatting  -->
                         <h3 class="h3-main">LED Wall</h3>
                         <h4 class="h3-main">Node/IoT</h4>
                         </div>
                     </div>
                     </div>
 
+                    <!-- padding added with img-padding -->
+                    <!-- class small-img adds flex properties and height for formatting  -->
                     <div class="img-padding small-img">
+                        <!-- background img added  -->
                     <div class="background-image-calc">
+                        <!-- class info-main assigns properties to box container inforamtion -->
                         <div class="info-main">
+                        <!-- h3-main sets margin to 0 for formatting  -->
                         <h3 class="h3-main">Calculator</h3>
                         <h4 class="h3-main">React/JavaScript/CSS</h4>
                         </div>
@@ -98,18 +141,28 @@
                     </div>
                     </div>
 
+                    <!-- padding added with img-padding -->
+                    <!-- class small-img adds flex properties and height for formatting  -->
                     <div class="img-padding small-img">
+                        <!-- background img added  -->
                     <div class="background-image-pastel">
+                        <!-- class info-main assigns properties to box container inforamtion -->
                         <div class="info-main">
+                        <!-- h3-main sets margin to 0 for formatting  -->
                         <h3 class="h3-main">Pastel Puzzels</h3>
                         <h4 class="h3-main">MERN Stack</h4>
                         </div>
                     </div>
                     </div>
 
+                    <!-- padding added with img-padding -->
+                    <!-- class small-img adds flex properties and height for formatting  -->
                     <div class="img-padding small-img">
+                        <!-- background img added  -->
                     <div class="background-image-run">
+                        <!-- class info-main assigns properties to box container inforamtion -->
                         <div class="info-main">
+                        <!-- h3-main sets margin to 0 for formatting  -->
                         <h3 class="h3-main">Run Buddy</h3>
                         <h4 class="h3-main">HTML/CSS</h4>
                         </div>
@@ -120,13 +173,24 @@
         </section>
     </main>
     
-    <footer  class="footer-bottom-padding">
+    <!-- Footer  -->
+    <!-- footer added for semantic flow  -->
+    <!-- id=work added to link with <a> tag  -->
+    <!-- padding added with footer-bottom-padding  -->
+    <footer id=ContactMe class="footer-bottom-padding">
+        <!-- flex box created with flex-box-main  -->
         <div class="flex-box-main">
+    <!-- formatting added with contact-me-footer  -->
         <h1 class="contact-me-footer">Contact Me</h1>
+        <!-- another flex box created with footer-flex  -->
+        <!-- .content-border assigns a border to the left of the paragraph and adds padding to the right and left  -->
         <div class="footer-flex content-border ">
+            <!-- ul created to list content  -->
             <ul >
-                <li class="list-style-type">
-                    <a class="footer-ul" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jarrod.blanning@gmail.com" target="_blank">Email Me</a>
+                <!-- class footer-ul formats content  -->
+                <!-- href added to each li  -->
+                <li>
+                    <a class="footer-ul footer-ul-style" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=jarrod.blanning@gmail.com" target="_blank">Email Me</a>
 
                 </li>
                 <li>

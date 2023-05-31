@@ -100,7 +100,7 @@ a:hover {
     height: 270px;
     width: 96%;
     margin-bottom: 0;
-    background-image: url("../Images/background.JPG") /*background image */;
+    background-image: url("../Images/background.jpg") /*background image */;
     background-size: cover;
     align-items:center;
 }
@@ -222,7 +222,7 @@ p {
     height: 100%;
     width: 100%;
     margin-bottom: 0;
-    background-image: url("../Images/surf.JPG") /*background image */;
+    background-image: url("../Images/surf.jpg") /*background image */;
     background-size:cover;
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
@@ -309,7 +309,7 @@ p {
     height: 231px;
     width: 100%;
     margin-bottom: 0;
-    background-image: url("../Images/run-buddy.JPG") /*background image */;
+    background-image: url("../Images/run-buddy.jpg") /*background image */;
     background-size:auto;
     align-items:center;
     border-top: 2px solid var(--border-color);

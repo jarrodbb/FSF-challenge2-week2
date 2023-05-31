@@ -100,7 +100,7 @@ a:hover {
     height: 270px;
     width: 96%;
     margin-bottom: 0;
-    background-image: url("../images/background.jpg") /*background image */;
+    background-image: url("../Images/background.jpg") /*background image */;
     background-size: cover;
     align-items:center;
 }

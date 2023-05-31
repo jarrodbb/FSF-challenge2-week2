@@ -59,7 +59,7 @@ correct semantic flow has been followed for accessibility
 
 
 ### Header with Nav bar
-[picture alt](../images/background.JPG "Title is optional")
+[Screenshot](../images/Header.png)
 ### Body with content inside sections  
 
 ### Footer with contact information

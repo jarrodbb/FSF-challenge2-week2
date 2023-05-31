@@ -271,7 +271,7 @@ p {
     height: 231px;
     width: 100%;
     margin-bottom: 0;
-    background-image: url("../Images/calculator.jpg") /*background image */;
+    background-image: url("../Images/calculator.JPG") /*background image */;
     background-size:auto;
     align-items:center;
     border-top: 2px solid var(--border-color);
@@ -309,7 +309,7 @@ p {
     height: 231px;
     width: 100%;
     margin-bottom: 0;
-    background-image: url("../Images/run-buddy.jpg") /*background image */;
+    background-image: url("../Images/run-buddy.JPG") /*background image */;
     background-size:auto;
     align-items:center;
     border-top: 2px solid var(--border-color);

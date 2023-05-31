@@ -32,7 +32,10 @@ Features of webpage includes
 
 ## Installation
 
-Github 
+Click the link to access the Portfolio 
+
+[Professional Portfolio](https://jarrodbb.github.io/Professional-Portfolio-Jarrod-Blanning/)
+
 [Github](https://github.com/jarrodbb/Professional-Portfolio-Jarrod-Blanning)
 
 Source code has been updated locally and merged to Github repo. The code index.html is the working code file
@@ -55,13 +58,11 @@ The HTML code and comments explain the the reasoning of the structure and conten
 correct semantic flow has been followed for accessibility 
 
 
-### updated links
+### Header with Nav bar
+[picture alt](../images/background.JPG "Title is optional")
+### Body with content inside sections  
 
-[Links updated](assets/images/links.png)
-
-### Correct semantic flow 
-
-[Semantic flow](assets/images/semantic-flow.png)
+### Footer with contact information
 
 ## Credits
 
@@ -69,5 +70,5 @@ N/A
 
 ## License
 
-The last sRefer to license in the repo
+Refer to license in the repo
 
